@@ -120,39 +120,102 @@
         </div>
       </div>
     </section>
-    <section class="second-section" id="news">
-      <div class="container">
-        <div class="wrapp2">
-          <div class="section-box">
-            <div class="info-box animate animate_right">
-              <h2 class="info-box__caption">
-                <span class="gradient_text">新着情報</span>
-              </h2>
-              <!--<p>← →</p>-->
+    <section class="second-section news" id="news" style="position: relative;">
+      <div class="news-wrap">
+        <div class="news-box">
+          <div class="news-box__title animate animate_right">
+            <h3>
+              <span class="gradient_text">新着情報</span>
+            </h3>
+            <div class="news-more">
+              <a href="news.html">もっと見る</a>
             </div>
-            <div class="info-slider">
-              <div class="info-slider__item animate animate_left">
-                <div class="info-slider__img"></div>
-                <h3>暗号カードのキャンペーンが進行中</h3>
-                <p>カードキャンペーンを実施中です。期間中に条件をクリアするとマスター付きクリプトカードを取得することができます。</p>
-                <div class="info-slider__stat">
-                <span><img src="img/eye.png" alt="eye"> 125</span><a href="" onclick="return false">近日公開</a></div>
+            <div class="slider-arrows">
+              <div class="slider-arrow slider-prev">
+                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-left"
+                     role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                     class="svg-inline--fa fa-arrow-left fa-w-14 fa-3x">
+                  <path fill="currentColor"
+                        d="M229.9 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L94.569 282H436c6.627 0 12-5.373 12-12v-28c0-6.627-5.373-12-12-12H94.569l155.13-155.13c4.686-4.686 4.686-12.284 0-16.971L229.9 38.101c-4.686-4.686-12.284-4.686-16.971 0L3.515 247.515c-4.686 4.686-4.686 12.284 0 16.971L212.929 473.9c4.686 4.686 12.284 4.686 16.971-.001z"
+                        class=""></path>
+                </svg>
               </div>
-              <div class="info-slider__item">
-                <div class="info-slider__img"></div>
-                <h3>オープニングがあります</h3>
-                <p>２０１９年６月にオープニング記念イベントを開催します。詳細は後日発表。</p>
-                <div class="info-slider__stat">
-                <span><img src="img/eye.png" alt="eye"> 125</span><a href="" onclick="return false">近日公開</a></div>
+              <div class="slider-arrow slider-next">
+                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-right"
+                     role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                     class="svg-inline--fa fa-arrow-right fa-w-14 fa-3x">
+                  <path fill="currentColor"
+                        d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z"
+                        class=""></path>
+                </svg>
               </div>
             </div>
           </div>
-
-          <img class="abs_element abs_element2 animate animate_left" src="img/abs_element1.png" alt="abs">
-
-          <img src="img/line1.png" alt="" class="line1 line11 animate animate_top">
+          <div class="news-container animate animate_left">
+            <div class="news-item">
+              <div class="news-item__img">
+                <img src="img/sliderimg1.png" alt="">
+              </div>
+              <div class="news-item__bottom">
+                <div class="news-item__info">
+                  <h4>暗号カードのキャンペーンが進行中</h4>
+                  <p>カードキャンペーンを実施中です。期間中に条件をクリアするとマスター付きクリプトカードを取得することができます。</p>
+                </div>
+                <div class="news-item__statistic">
+                  <span><img src="img/eye.png" alt="eye"> 125</span>
+                  <a href="" onclick="return false">近日公開</a>
+                </div>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="news-item__img">
+                <img src="img/sliderimg2.png" alt="">
+              </div>
+              <div class="news-item__bottom">
+                <div class="news-item__info">
+                  <h4>オープニングがあります</h4>
+                  <p>２０１９年６月にオープニング記念イベントを開催します。詳細は後日発表。</p>
+                </div>
+                <div class="news-item__statistic">
+                  <span><img src="img/eye.png" alt="eye"> 125</span>
+                  <a href="" onclick="return false">近日公開</a>
+                </div>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="news-item__img">
+                <img src="img/sliderimg1.png" alt="">
+              </div>
+              <div class="news-item__bottom">
+                <div class="news-item__info">
+                  <h4>暗号カードのキャンペーンが進行中</h4>
+                  <p>カードキャンペーンを実施中です。期間中に条件をクリアするとマスター付きクリプトカードを取得することができます。</p>
+                </div>
+                <div class="news-item__statistic">
+                  <span><img src="img/eye.png" alt="eye"> 125</span>
+                  <a href="" onclick="return false">近日公開</a>
+                </div>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="news-item__img">
+                <img src="img/sliderimg2.png" alt="">
+              </div>
+              <div class="news-item__bottom">
+                <div class="news-item__info">
+                  <h4>オープニングがあります</h4>
+                  <p>２０１９年６月にオープニング記念イベントを開催します。詳細は後日発表。</p>
+                </div>
+                <div class="news-item__statistic">
+                  <span><img src="img/eye.png" alt="eye"> 125</span>
+                  <a href="" onclick="return false">近日公開</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <img src="img/line1.png" alt="" class="line1 line11 animate animate_top">
     </section>
     <section class="third-section" id="trading">
       <div class="container">

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Home - Crypto Donation</title>
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<div class="loader">
+    <div id="bitcoin">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             x="0px" y="0px" width="200px" height="200px" viewBox="100 100 400 400" xml:space="preserve">
+                <filter id="dropshadow" height="130%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+                    <feOffset dx="0" dy="0" result="offsetblur"/>
+                    <feFlood flood-color="red"/>
+                    <feComposite in2="offsetblur" operator="in"/>
+                    <feMerge>
+                <feMergeNode/>
+                        <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+                </filter>
+            <path class="path" style="filter:url(#dropshadow)" fill="#000000"
+                  d="M446.089,261.45c6.135-41.001-25.084-63.033-67.769-77.735l13.844-55.532l-33.801-8.424l-13.48,54.068c-8.896-2.217-18.015-4.304-27.091-6.371l13.568-54.429l-33.776-8.424l-13.861,55.521c-7.354-1.676-14.575-3.328-21.587-5.073l0.034-0.171l-46.617-11.64l-8.993,36.102c0,0,25.08,5.746,24.549,6.105c13.689,3.42,16.159,12.478,15.75,19.658L208.93,357.23c-1.675,4.158-5.925,10.401-15.494,8.031c0.338,0.485-24.579-6.134-24.579-6.134l-9.631,40.468l36.843,9.188c8.178,2.051,16.209,4.19,24.098,6.217l-13.978,56.17l33.764,8.424l13.852-55.571c9.235,2.499,18.186,4.813,26.948,6.995l-13.802,55.309l33.801,8.424l13.994-56.061c57.648,10.902,100.998,6.502,119.237-45.627c14.705-41.979-0.731-66.193-31.06-81.984C425.008,305.984,441.655,291.455,446.089,261.45z M368.859,369.754c-10.455,41.983-81.128,19.285-104.052,13.589l18.562-74.404C306.28,314.65,379.774,325.975,368.859,369.754z M379.302,260.846c-9.527,38.187-68.358,18.781-87.442,14.023l16.828-67.489C327.767,212.14,389.234,221.02,379.302,260.846z"/>
+                </svg>
+    </div>
+</div>
+<header class="header" id="header">
+    <div class="container">
+        <div class="nav">
+            <div class="nav__logo">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="nav__language">
+                <a href="index.html" class="nav__language_active">Eng</a>
+                <a href="ru.html">Ru</a>
+                <a href="jpn.html">Jpn</a>
+            </div>
+
+            <ul class="nav__menu" id="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="activeMob"><a href="news.html" onclick="return false">News</a></li>
+                <li><a href="http://bit-life.net/" target="_blank">Trading</a></li>
+                <li><a href="atm.html">ATM</a></li>
+                <li><a href="card.html">Card</a></li>
+                <li><a href="estate.html">Real Estate</a></li>
+                <li><a href="buy.html">BUY/SELL</a></li>
+                <li><a href="bidding.html">Bit bidding</a></li>
+                <li><a href="donation.html">Crypto Donation</a></li>
+            </ul>
+
+            <div id="btn_open" class="nav__btn">
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+<ul class="mob-nav">
+    <li>
+        <div id="btn_close" class="nav__btn">
+            <span></span>
+        </div>
+    </li>
+    <li>
+        <div class="mob-nav__language">
+            <a href="index.html" class="mob-nav__language_active">Eng</a>
+            <a href="ru.html">Ru</a>
+            <a href="jpn.html">Jpn</a>
+        </div>
+    </li>
+    <li><a href="index.html">Home</a></li>
+    <li class="activeMob"><a href="news.html" onclick="return false">News</a></li>
+    <li><a href="http://bit-life.net/" target="_blank">Trading</a></li>
+    <li><a href="atm.html">ATM</a></li>
+    <li><a href="card.html">Card</a></li>
+    <li><a href="estate.html">Real Estate</a></li>
+    <li><a href="buy.html">BUY/SELL</a></li>
+    <li><a href="bidding.html">Bit bidding</a></li>
+    <li><a href="donation.html">Crypto Donation</a></li>
+</ul>
+<main>
+    <section class="second-section news bg-light" id="news">
+        <div class="news-wrap">
+            <div class="news-box">
+                <div class="news-box__title">
+                    <h3>
+                        <span class="gradient_text">What's New</span>
+                    </h3>
+                    <div class="slider-arrows">
+                        <div class="slider-arrow slider-prev">
+                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-left"
+                                 role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                 class="svg-inline--fa fa-arrow-left fa-w-14 fa-3x">
+                                <path fill="currentColor"
+                                      d="M229.9 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L94.569 282H436c6.627 0 12-5.373 12-12v-28c0-6.627-5.373-12-12-12H94.569l155.13-155.13c4.686-4.686 4.686-12.284 0-16.971L229.9 38.101c-4.686-4.686-12.284-4.686-16.971 0L3.515 247.515c-4.686 4.686-4.686 12.284 0 16.971L212.929 473.9c4.686 4.686 12.284 4.686 16.971-.001z"
+                                      class=""></path>
+                            </svg>
+                        </div>
+                        <div class="slider-arrow slider-next">
+                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-right"
+                                 role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                 class="svg-inline--fa fa-arrow-right fa-w-14 fa-3x">
+                                <path fill="currentColor"
+                                      d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z"
+                                      class=""></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container">
+                    <div class="news-item">
+                        <div class="news-item__img">
+                            <img src="img/sliderimg1.png" alt="">
+                        </div>
+                        <div class="news-item__bottom">
+                            <div class="news-item__info">
+                                <h4>Campaign for Crypto card
+                                    is going on</h4>
+                                <p>Campaign for Crypto card is going on. You can get Crypto Debit Card with Master
+                                    function,
+                                    if you clear conditions during the term</p>
+                            </div>
+                            <div class="news-item__statistic">
+                                <span><img src="img/eye.png" alt="eye"> 125</span>
+                                <a href="" onclick="return false">Coming soon</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-item__img">
+                            <img src="img/sliderimg2.png" alt="">
+                        </div>
+                        <div class="news-item__bottom">
+                            <div class="news-item__info">
+                                <h4>We will have an opening</h4>
+                                <p>We will have an opening event in June 2019. For details we will announce later.</p>
+                            </div>
+                            <div class="news-item__statistic">
+                                <span><img src="img/eye.png" alt="eye"> 125</span>
+                                <a href="" onclick="return false">Coming soon</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-item__img">
+                            <img src="img/sliderimg1.png" alt="">
+                        </div>
+                        <div class="news-item__bottom">
+                            <div class="news-item__info">
+                                <h4>Campaign for Crypto card
+                                    is going on</h4>
+                                <p>Campaign for Crypto card is going on. You can get Crypto Debit Card with Master
+                                    function,
+                                    if you clear conditions during the term</p>
+                            </div>
+                            <div class="news-item__statistic">
+                                <span><img src="img/eye.png" alt="eye"> 125</span>
+                                <a href="" onclick="return false">Coming soon</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-item__img">
+                            <img src="img/sliderimg2.png" alt="">
+                        </div>
+                        <div class="news-item__bottom">
+                            <div class="news-item__info">
+                                <h4>We will have an opening</h4>
+                                <p>We will have an opening event in June 2019. For details we will announce later.</p>
+                            </div>
+                            <div class="news-item__statistic">
+                                <span><img src="img/eye.png" alt="eye"> 125</span>
+                                <a href="" onclick="return false">Coming soon</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="social">
+                <li>
+                    <a href="#" onclick="return false">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512"
+                             class="svg-inline--fa fa-facebook-f fa-w-9 fa-2x">
+                            <path fill="currentColor"
+                                  d="M215.8 85H264V3.6C255.7 2.5 227.1 0 193.8 0 124.3 0 76.7 42.4 76.7 120.3V192H0v91h76.7v229h94V283h73.6l11.7-91h-85.3v-62.7c0-26.3 7.3-44.3 45.1-44.3z"
+                                  class=""></path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="return false">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                             class="svg-inline--fa fa-twitter fa-w-16 fa-2x">
+                            <path fill="currentColor"
+                                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                  class=""></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+</main>
+<script src="js/vendor.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
